@@ -1,4 +1,4 @@
-//create default schemas for product
+//create default schemas for product - create schema and add ability let users add content to the database
 export default{
     name: 'product',
     title: 'Product',
@@ -30,8 +30,8 @@ export default{
             name: 'slug',
             title: 'Slug',
             type: 'slug',
-            Options: {
-                //automatically generate unique slug based on product name
+            options: {
+                //a generate button - automatically generate unique slug based on product name
                 source: 'name',
                 maxlEngth: 90,
             }
